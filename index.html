@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>StarBucks Landing page</title>
+    <title>Responsive StarBucks Landing page</title>
 </head>
 <body>
     
@@ -11,7 +12,10 @@
         <div class="circle"></div>
         <header>
             <a href="#" ><img src="logo.png" class="logo"></a>
-            <ul>
+            <div class="toggle" onclick="toggleMenu();"></div>
+
+            
+            <ul class="navigation">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Menu</a></li>
                 <li><a href="#">What's is new</a></li>
@@ -50,6 +54,14 @@
         function changeCircleColor(color){
             const circle=document.querySelector('.circle');
             circle.style.background=color;
+        }
+
+        function toggleMenu(){
+            
+            var menuToggle = document.querySelector('.toggle');
+            var navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');  
         }
     </script>
 </body>
