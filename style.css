@@ -263,3 +263,35 @@ header ul li a
     }
 
 }
+/* Add a responsive viewport meta tag */
+
+
+/* Use media queries to adjust styles based on screen size */
+@media only screen and (min-width: 768px) {
+  /* Adjust styles for screens that are at least 768px wide */
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  /* Adjust styles for screens that are at least 992px wide */
+  .container {
+    max-width: 970px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* Adjust styles for screens that are at least 1200px wide */
+  .container {
+    max-width: 1170px;
+  }
+}
+
+/* Adjust styles for smaller screens */
+@media only screen and (max-width: 767px) {
+  /* Add styles for screens that are less than 768px wide */
+  .container {
+    padding: 0 10px;
+  }
+}
